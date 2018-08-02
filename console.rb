@@ -8,13 +8,13 @@ Casting.delete_all()
 Movie.delete_all
 Star.delete_all
 
-movie1 = Movie.new ({ 'title' => 'The Dark Knight', 'genre' => 'Adventure'})
+movie1 = Movie.new ({ 'title' => 'The Dark Knight', 'genre' => 'Adventure', 'budget' => 10})
 movie1.save()
-movie2 = Movie.new ({ 'title' => 'Interstellar', 'genre' => 'Sci-Fi'})
+movie2 = Movie.new ({ 'title' => 'Interstellar', 'genre' => 'Sci-Fi', 'budget' => 20})
 movie2.save()
-movie3 = Movie.new ({ 'title' => 'Inception', 'genre' => 'Sci-Fi'})
+movie3 = Movie.new ({ 'title' => 'Inception', 'genre' => 'Sci-Fi', 'budget' => 30})
 movie3.save()
-movie4 = Movie.new ({ 'title' => 'The Prestige', 'genre' => 'Mystery'})
+movie4 = Movie.new ({ 'title' => 'The Prestige', 'genre' => 'Mystery', 'budget' => 50})
 movie4.save()
 
 star1 = Star.new ({ 'first_name' => 'Christian', 'last_name' => 'Bale'})
