@@ -4,6 +4,10 @@ require_relative( 'models/star' )
 
 require( 'pry-byebug' )
 
+Casting.delete_all()
+Movie.delete_all
+Star.delete_all
+
 movie1 = Movie.new ({ 'title' => 'The Dark Knight', 'genre' => 'Adventure'})
 movie1.save()
 movie2 = Movie.new ({ 'title' => 'Interstellar', 'genre' => 'Sci-Fi'})
