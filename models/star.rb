@@ -18,4 +18,12 @@ class Star
     star = SqlRunner.run(sql, values).first
     @id = star['id'].to_i()
   end
+
+  def self.all()
+    sql = "SELECT * FROM stars"
+    stars_array = SqlRunner.run(sql)
+    result = stars_array.map { |star| Star.new(star) }
+    return result
+  end
+
 end

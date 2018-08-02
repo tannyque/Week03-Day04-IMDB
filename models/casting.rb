@@ -20,4 +20,11 @@ class Casting
     @id = casting['id'].to_i()
   end
 
+  def self.all()
+    sql = "SELECT * FROM castings"
+    castings_array = SqlRunner.run(sql)
+    result = castings_array.map { |casting| Casting.new(casting) }
+    return result
+  end
+
 end
